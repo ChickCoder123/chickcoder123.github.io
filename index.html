@@ -10,23 +10,23 @@
         <style>
             @keyframes borderStretch {
                 0% {
-                    width: 32vh;
-                    height: 32vh;
+                    width: 24vw;
+                    height: 24vw;
                     transform: translate(66.5vw, 2vh);
                 }
                 40% {
-                    width: 35vh;
-                    height: 32vh;
+                    width: 27vw;
+                    height: 24vw;
                     transform: translate(66vw, 2vh);
                 }
                 80% {
-                    width: 32vh;
-                    height: 35vh;
+                    width: 24vw;
+                    height: 27vw;
                     transform: translate(66.5vw, 1.5vh);
                 }
                 100% {
-                    width: 32vh;
-                    height: 32vh;
+                    width: 24vw;
+                    height: 24vw;
                     transform: translate(66.5vw, 2vh);
                 }
             }
@@ -109,13 +109,15 @@
             }
             
             #hamburger {
-                background: orange;
+                background: rgb(255, 150, 0);
                 position: absolute;
                 left: 100vw;
                 top: 16vh;
                 width: 25vw;
                 height: 84vh;
                 border-radius: 0px 0px 0px 10px;
+                z-index: 1000000;
+                box-shadow: -3px 2px 5px 0px white;
             }
             #hamburger h2 {
                 margin-top: 20vh;
@@ -139,26 +141,25 @@
                 background: yellow;
             }
             #content h1 {
-                font-size: 13vh;
+                font-size: 9vw;
                 font-family: Fira Sans;
                 transform: translate(6vw, 26vh);
                 text-align: left;
             }
             #content h3 {
                 font-family: Rubik;
-                font-size: 5vh;
+                font-size: 3vw;
                 transform: translate(6.5vw, 26vh);
                 text-align: left;
                 font-weight: 300;
             }
-            #content div {
+            #content img {
                 border: none;
-                background: linear-gradient(to right, green, orange);
-                height: 32vh;
-                width: 32vh;
+                height: 24vw;
+                width: 24vw;
                 border-radius: 50%;
                 transform: translate(66.5vw, 2vh);
-                animation: 1s borderStretch infinite;
+                animation: 0.85s borderStretch infinite;
             }
         </style>
     </head>
@@ -182,7 +183,7 @@
         <div id = 'content'>
             <h1> Lorum Ipsum </h1>
             <h3> Deloras de mira </h3>
-            <div>  </div>
+            <img src = 'https://avatars.githubusercontent.com/u/129548862?v=4' alt = 'pfp.png'>
         </div>
         
         <!-- Hamburger script -->
